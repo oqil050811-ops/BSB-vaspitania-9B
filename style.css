@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eaf3f8;
+  color: #1a334e;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Poster Container */
+.poster-container {
+  width: 100%;
+  max-width: 1050px;
+  background-color: #ffffff;
+  border: 12px solid #e1eff7;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Header Section */
+.poster-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+}
+
+.header-left {
+  width: 20%;
+}
+
+.icons-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 32px;
+}
+
+.header-center {
+  width: 60%;
+  text-align: center;
+}
+
+.header-center h1 {
+  font-size: 28px;
+  color: #0d436d;
+  margin-bottom: 4px;
+}
+
+.header-center h2 {
+  font-size: 18px;
+  color: #1a5682;
+  margin-bottom: 6px;
+}
+
+.header-center .subtitle {
+  font-size: 12px;
+  color: #66839b;
+}
+
+.header-right {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.info-card {
+  background-color: #e4f1f9;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #1a4162;
+  line-height: 1.5;
+}
+
+/* Grid Layout (3 Columns) */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Card Styling */
+.card {
+  background-color: #f3f8fc;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 13px;
+  line-height: 1.45;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card h3 {
+  font-size: 14px;
+  color: #0b395d;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+/* Circular Badges for Numbers */
+.badge {
+  background-color: #002f53;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.card ul, .card ol {
+  padding-left: 18px;
+}
+
+.card li {
+  margin-bottom: 4px;
+}
+
+.small-text {
+  font-size: 11px;
+  color: #55728a;
+}
+
+/* Highlight boxes inside cards */
+.highlight-box {
+  background-color: #d1e8e2;
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #004d40;
+  font-size: 12px;
+}
+
+.result-box {
+  background-color: #d8f3e5;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #135835;
+  font-size: 12px;
+  margin-top: auto;
+}
+
+/* Tables Styling */
+.data-table, .plan-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 6px;
+  font-size: 11px;
+  background-color: #ffffff;
+}
+
+.data-table th, .plan-table th {
+  background-color: #176361;
+  color: #ffffff;
+  padding: 6px;
+  text-align: left;
+  border: 1px solid #b5d5d3;
+}
+
+.data-table td, .plan-table td {
+  border: 1px solid #c9e0df;
+  padding: 5px;
+  text-align: center;
+}
+
+.plan-table td {
+  text-align: left;
+}
+
+.survey-footer {
+  font-size: 11px;
+  margin-top: 6px;
+}
+
+.underline-line {
+  font-weight: bold;
+}
+
+/* Footer Section */
+.poster-footer {
+  text-align: center;
+  border-top: 2px dashed #b9d5e8;
+  padding-top: 16px;
+  font-size: 13px;
+  color: #0d3859;
+  line-height: 1.5;
+}
+
+.footer-question {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.footer-callout {
+  margin-top: 4px;
+  font-style: italic;
+  color: #2c597d;
+}
+
+/* Responsive Support */
+@media (max-width: 850px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .poster-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .header-left, .header-center, .header-right {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
